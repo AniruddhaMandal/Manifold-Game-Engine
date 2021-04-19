@@ -1,0 +1,2 @@
+# Manifold Game Engine
+Game engine written on C++. Tutorial Followed by [Cherno](https://youtube.com/c/TheChernoProject). Cherno build the project for Windows os on VS2017. This is built for Linux os with the standard gcc compiler.
