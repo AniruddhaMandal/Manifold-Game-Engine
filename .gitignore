@@ -1,2 +1,6 @@
 build/**
 .vscode/**
+Makefile
+bin/*
+bin-obj/*
+vendor/premake/premake5
