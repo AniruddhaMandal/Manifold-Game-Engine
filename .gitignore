@@ -1,8 +1,8 @@
+.vscode/**
 build/**
 build-mingw/**
-.vscode/**
-Makefile
 bin/*
 bin-obj/*
+Makefile
 vendor/premake/premake5
 vendor/premake/premake5.exe
