@@ -13,7 +13,7 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 
 
--- Manifold Game Engine Core (SharedLib)
+------------------- Manifold Game Engine Core (SharedLib) -----------------------
 ---------------------------------------------------------------------------------
 project "Manifold"
     location "Manifold"
@@ -51,11 +51,6 @@ project "Manifold"
             "MF_BUILD_DLL"
         }
 
-        prelinkcommands
-        {
-            ("{COPY} %{cfg.buildtarget.relpath} ../bin/"..outputdir.."/Sandbox")
-        }
-
     filter "configurations:Debug"
         defines "MF_DEBUG"
         symbols "On"
@@ -73,7 +68,7 @@ project "Manifold"
 
 
 
--- Sandbox application project (Executable)
+--------------------- Sandbox application project (Executable) ----------------------
 -------------------------------------------------------------------------------------
 project "Sandbox"
     location "Sandbox"
@@ -100,6 +95,9 @@ project "Sandbox"
         "Manifold"
     }
 
+
+
+
     filter "system:linux"
         cppdialect "gnu++17"
         staticruntime "On"
@@ -116,7 +114,6 @@ project "Sandbox"
             "MF_PLATFORM_WINDOWS",
             "MF_BUILD_DLL"
         }
-
 
     filter "configurations:Debug"
         defines "MF_DEBUG"
